@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+.page-title>h1{
+    color: whitesmoke;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+
+    font-family: Satisfy;
+    font-size: 3rem;
+    white-space: nowrap;
+    
+}
+.product-page{
+    position: relative;
+    top: 10vh;
+    display: grid;
+   
+}
+.product-page-bk{
+    width: 100%;
+    height: 100%;
+    background: red;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
+}
+.product-page>:nth-child(even){
+    border-right: gray 4px solid;
+    border-left: gray 4px solid;
+    background-color: #1212119c;
+    color: white;
+}
+.product-page>:nth-child(odd){
+    border-right: gray 4px solid;
+    border-left: gray 4px solid;
+    background-color: #1212119c;
+    color: white;
+}
+.page-title{
+    background: url(./Resources/ecommerce.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding:20vh;
+}
+
+
+.product-page-section{
+    display:flex;
+    flex-direction: column;
+    margin: 2vh 5vw;
+    
+
+}
+.product-page-section>.product-Title{
+    padding: 5vh 0vh;
+    text-align: center;
+    font-family:Cinzel ;
+    font-weight: bolder;
+    vertical-align:middle ;
+    font-size: 3rem;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    margin: 2vh 3vw;
+    
+}
+
+.Item-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr  1fr;
+    grid-column-gap: 5vw;
+    margin-bottom: 5vh;
+}
+.Item:nth-of-type(odd){
+    background-color: rgba(0, 0, 0, 0.397);
+    grid-column: 2/3;
+    border-radius: 50px;
+}
+.Item:nth-of-type(even){
+    background-color: rgba(0, 0, 0, 0.397);
+    grid-column: 3/4;
+    border-radius: 50px;
+}
+.Item{
+    display: flex;
+    margin-top: 4vh;
+    width: 30vw;
+    align-items: center;
+
+}
+.Item-image{
+    /* background: url(./Resources/download.jfif); */
+    width: 5vw;
+    height: 5vw;
+    margin: 2%  ;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+#Item-price{
+margin-left: 6vw;
+white-space: nowrap;
+margin-right: 4vw;
+}
+#Item-name{
+    white-space: nowrap;
+    float: right;
+}
+
+   

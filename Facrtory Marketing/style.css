@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: FireBrick;
+    
+}
+header{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    
+    
+}
+
+
+
+.navbar{
+    
+    position: fixed;
+    top: 195px;
+    width: 100%;
+    background-color: #3c3c3c;
+    padding: 1% 0%;
+    /* display: flex;
+    justify-content:space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns:auto ;
+    grid-auto-rows: 7vh ;
+    align-items: center;
+    color:FireBrick;
+    z-index: 1001;
+    transition: 0.5s all ease-in;
+    /* overflow: auto; */
+}
+
+.nav--up{
+    
+    transform:translateY(-200px);
+    background: #787878(0, 0, 0, 0.596);
+    transition: 0.7s transform 0.125s ;
+    
+}
+
+
+.Enterprise-title{
+    grid-column: 2/3;
+}
+.Enterprise-title a{
+    color: FireBrick;
+    text-decoration: none;
+    z-index: 1000;
+    font-family: Croissant one;
+
+    font-size: 2rem;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    white-space: nowrap;
+
+}
+.Enterprise-title a:hover{
+    color: #755400;
+    
+}
+.nav-links{
+    grid-column: 5/8;
+    margin: 5%;
+
+}
+.nav-links ul {
+    
+    
+    display: flex;
+    align-items: center;
+
+}
+.nav-links li {
+    list-style: none;
+    
+}
+.nav-links li a {
+    z-index: 1000;
+    font-family: Quicksand;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 20px;
+    
+    text-shadow: 2px 2px black ;
+}
+.nav-links li a:hover{
+    padding-bottom: 30px; 
+    color:firebrick ;
+    border-bottom: 3px solid #755400;
+    transition: 0.2s all ease-in;
+}
+.book-btn{
+    grid-column: 9/10;
+}
+.Booking{
+    
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.116);
+    border-radius: 30px;
+    border: firebrick solid 2px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: bold;
+    white-space: nowrap;    
+
+}
+.Booking:hover{
+    background: rgba(255, 255, 255, 0.24);
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}
+.Logo  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    transition: 0.5s all ease-in;
+    height: 200px;
+    margin: 0%;
+    background-color:FireBrick;
+    
+}
+.Logo .logo-description{
+    margin-right: 20vw;
+    color: aliceblue;
+    white-space: nowrap;
+    font-family: Satisfy;
+    font-size: 2rem;
+    text-transform:capitalize;
+    
+}
+.Logo--hide{
+    transform: translateY(-200px);
+    transition: 5s transform 0s;
+}
+
+.main1{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    
+}
+.main-BK 
+    {    
+    background: url(./Resources/digital-marketing-logo-design.jpg);
+    background-size: cover;
+  
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+   
+
+}
+.bg-text{
+    content: '';
+    margin-left: 7%;
+    color: white;
+    position: absolute;
+    top: 50vh;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scale(1);
+}
+.bg-text h1{
+    white-space: nowrap;
+    padding-bottom: 10vh;
+    font-family:sans-serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px black ;
+    font-weight: 700;
+}
+.bg-text h1 span{
+    color: FireBrick;
+    font-family: Croissant one;
+    white-space: nowrap;
+    word-spacing: 5px;
+
+
+}
+.bg-text h3 {
+    font-family:sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black ;
+    word-spacing: 3px;
+
+
+}
+.bg-text h3 span{
+    font-family: Cinzel;
+    font-size:2rem;
+    color: firebrick;
+    letter-spacing: 3px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+
+}
+.container{
+    display: flex;
+    margin-left:10% ;
+    flex-direction:column;
+    position: absolute;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+.bg-text .Booking{
+    margin-top: 5% ;
+    border:2px solid #000000;
+}
+/*About US section  */
+.About{
+    position: relative;
+    width: 100%;
+    background: url(./Resources/digital-marketing-1938274_1280-1280x715.png);
+    background-size: cover;
+  
+    background-position: center center;
+    background-attachment: fixed;
+    padding-bottom: 10vh;
+
+}
+.container2{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax(10vh,auto) ;
+
+}
+.About-text{
+   
+    grid-column: 2/5;
+    grid-row: 3/5;
+    padding: 5% 2%;
+    color: white;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5vh;
+
+}
+.About-text>h1{
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    color: firebrick;
+    font-family:Quicksand ;
+    font-size: 4rem;
+    font-weight: bolder;
+
+}
+.About-text>h2{
+    color: #ffffff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.384);
+    font-family:Quicksand ;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+.About-text>ul{
+    padding-left:5% ;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    background: rgba(0, 0, 0, 0.384);
+    color: firebrick;
+    font-size: 1.4rem;
+    font-family:Quicksand;
+    font-weight: bolder;
+
+    
+}
+.About-text>ul>li{
+    list-style: none;
+    padding-bottom: 5%;
+}
+.About-box{
+    grid-column: 7/10;
+    grid-row: 3/5;
+    background: rgba(128, 128, 128, 0);
+    border-right: 2px dotted firebrick;
+    padding-right: 10%;
+    
+}
+
+.About-img{
+    width: 100%;
+    height: 100%;
+    background: url(./Resources/shutterstock_672255217-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+    
+    
+    
+}
+.products{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    max-width: 100%;
+}
+
+.product-Bk{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: url(./Resources/ecommerce.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 110vh;
+    width: 100%;
+    z-index: 899;
+
+
+
+}
+.product-container{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 20vh 20vh 20vh 20vh ;
+    grid-gap: 5vh;
+    padding:7vh 0vh;
+    z-index: 900;
+
+}
+.product-title{
+    grid-row: 1/2;
+    grid-column: 2/6;
+    background: #0000002a;
+    border-left: firebrick 5px solid;
+    padding-left: 5vw;
+    padding-top: 2vh;
+}
+.product-title>h1{
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+
+    color: firebrick;
+    font-family: Cinzel;
+    font-size: 2rem;
+}
+.product-title>h2{
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+
+    color: white;
+    font-family: Quicksand;
+    font-size: 2rem;
+
+}
+.product-sections{
+    grid-row: 1/5;
+    grid-column: 6/10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vh;
+}
+.product-sections>div{
+    color: #ffffff;
+    font-family: Berkshire Swash;
+    background-size:cover;
+    background-position: center center;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    text-align: center;
+    padding: 10% 10%;
+    border-top: firebrick 5px solid;
+    border-right: firebrick 2px solid;
+    transition: 0.4s all 0.1s;
+    
+
+    
+
+}
+.product-sections>div:hover{
+    transform:  scale(1.1);
+    
+}
+.product-sections>div>a{
+text-decoration: none;
+color: #ffffff;
+   
+}
+.product-sections>div>a:hover{
+    color:firebrick;
+}
+
+
+.Clothes-sec{
+    background: url(./Resources/istockphoto-887360960-612x612.jpg);
+    grid-column: 1/3;
+
+}
+.Auto-sec{
+    background: url(./Resources/Audi-Cars.jpg);
+}
+.Elec-sec{
+    background: url(./Resources/roku-city-1.jpg);
+
+}
+.House-Staff-sec{
+    background: url(./Resources/merlin_136405977_91cbc6ee-3389-4d23-98e1-924f28ffc1b7-jumbo.jpg);
+    grid-column: 1/3;
+
+}
+.Devices-sec{
+    background: url(./Resources/istockphoto-1292038829-170667a.jpg);
+    grid-column: 1/3;
+
+}
+.product-img{
+    grid-column: 2/6;
+    grid-row: 2/5;
+    background: url(./Resources/online-shop.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.resv-title>h1{
+    color:firebrick;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    font-family: Cinzel;
+    font-size: 2.5rem ;
+
+}
+.footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 30vh;
+    background-color:#121010;
+    margin-top: 10vh;
+}
+.footer-title{
+    grid-column: 1/2;
+    font-size: 1.5rem;
+    color: firebrick;
+    font-family: Cinzel;
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    white-space: nowrap;
+}
+.social-icons{
+    grid-column: 2/3;
+    background:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vh;
+    padding-left: 11vw;
+    
+}
+.fab{
+    color: aliceblue;
+    font-size: 3rem;
+    transition: 0.4s all 0.01s ;
+}
+.fab:hover{
+    color:firebrick;
+    font-size: 2.7rem;
+    border-bottom: 2px solid firebrick ;
+    padding-bottom: 4vh;
+    
+}
+.contact-info{
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    font-family: Quicksand;
+    margin-top: 4vh;
+    font-size: 1.4rem;
+    color: firebrick ;
+    
+}
+.contact-info>p{
+    padding-bottom: 3vh;
+    border-left: 2px solid firebrick  ;
+    padding-left: 3vw;
+}
+.contact-info>a{
+
+    margin-top: 5vh;
+    text-decoration: none;
+    color: aliceblue;
+    padding-bottom: 3vh;
+    border-left: 2px solid firebrick  ;
+    padding-left: 3vw;
+}
